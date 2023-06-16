@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Espol</title>
+
+        <!-- Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet" />
+        <!-- MDB -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- Barra de navegación -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-12">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Calculadora ESPOL</a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-mdb-toggle="collapse"
+                                data-mdb-target="#navbarToggleExternalContent2"
+                                aria-controls="navbarToggleExternalContent1"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars text-dark"></i>
+                            </button>
+
+                        </div>
+                    </nav>
+                    <div class="collapse" id="navbarToggleExternalContent2">
+                        <ul class="bg-light shadow-3 py-2 px-3">
+                            <li
+                                class="btn btn-link btn-block m-0 p-2 text-start text-dark">Inicio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario  -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-5 mx-auto">
+                        <form id="formulario">
+                            <div class="row">
+                                <div class="col">
+                                    <!-- Aquí va el contenido del segundo div -->
+                                </div>
+                            </div>
+                            <!-- Valor por hora -->
+                            <div class="row">
+                                <div class="col-md-5 mx-1 border rounded border-primary">
+                                    <h2>Parte práctica</h2>
+                                    <div class="form-outline mb-4"> 
+                                        <input type="number" id="porcentajeP" step="any" required="required" class="form-control" />
+                                        <label class="form-label" for="porcentajeP">El porcentaje de la parte práctica:</label>
+                                    </div>
+                                    <div class="form-outline mb-4"> 
+                                        <input type="number" id="valorPractica" step="any" required="required" class="form-control" />
+                                        <label class="form-label" for="valorPractica">Nota del práctico:</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mx-1 border rounded border-primary">
+                                    <h2>Parte teorica</h2>
+                                    <div class="form-outline mb-4"> 
+                                        <input type="number" id="valorPrimerP" step="any" required="required" class="form-control" />
+                                        <label class="form-label" for="valorPrimerP">Nota del primer parcial:</label>
+                                    </div>
+                                    <div class="form-outline mb-4"> 
+                                        <input type="number" id="valorSegundoP" step="any" required="required" class="form-control" />
+                                        <label class="form-label" for="valorSegundoP">Nota del segundo parcial:</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-4 ">
+                                    <h2>Mejoramiento</h2>
+                                    <div class="form-outline mb-2"> 
+                                        <input type="number" id="Mejoramiento" step="any" class="form-control" />
+                                        <label class="form-label" for="Mejoramiento">Nota del Mejoramiento:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text-center mt-4">Es hora de jugar</h3>
+                            <div class="row mb-4 d-flex justify-content-center">
+                                <div class="col-md-6">
+                                    <button type="submit"
+                                        class="btn btn-primary btn-block">Calcular</button>
+                                </div>
+                            </div>
+    
+                            <div class="row mb-4 d-flex justify-content-center">
+                                <div class="col-md-6">
+                                    <input
+                                        class="form-control"
+                                        id="valorTotal"
+                                        type="text"
+                                        placeholder="Aquí tu destino."
+                                        aria-label="disabled input example"
+                                        disabled />
+                                        <h2 class ="mt-4" id="NotaNecesaria"></h2>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+        </div>
+        
+        <!-- MDB -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+
+        <!-- javascript:src public/javascript/calculadora.js -->
+        <script 
+            type="text/javascript"
+            src="public/javascript/calculadora.js"></script>
+
+
+    </body>
+</html>
